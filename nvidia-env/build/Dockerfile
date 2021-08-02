@@ -24,5 +24,7 @@ RUN apt -y install  vim \
   unzip \
   tmux 
 
+RUN pip install -r requirements.txt
+
 ENV NVIDIA_VISIBLE_DEVICES all
 ENV NVIDIA_DRIVER_CAPABILITIES utility,compute

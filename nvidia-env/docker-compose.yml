@@ -15,7 +15,7 @@ services:
 
     ipc: host
     volumes: 
-      - ./:/workspace
+      - ./source:/workspace
 
     tty: true
     restart: always
