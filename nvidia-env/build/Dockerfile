@@ -24,6 +24,7 @@ RUN apt -y install  vim \
   unzip \
   tmux 
 
+COPY requirements.txt /workspace/requirements.txt
 RUN pip install -r requirements.txt
 
 ENV NVIDIA_VISIBLE_DEVICES all
